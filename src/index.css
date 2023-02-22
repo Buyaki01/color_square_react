@@ -1,1 +1,10 @@
+.squareContainer{
+  display: flex;
+  justify-content: center;
+}
 
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
