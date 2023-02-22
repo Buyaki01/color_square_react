@@ -6,7 +6,11 @@ function App() {
   const [colorName, setColorName] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
+    console.log('submitted');
+    if (!colorName) return;
+    
+    setColorName(''); 
   }
 
   return (
@@ -15,7 +19,10 @@ function App() {
         <h1 className="text-center text-4xl mt-5">Color Square</h1>
       </header>
 
-      <Square />
+      <Square 
+        colorName={colorName}
+        setColorName={setColorName}
+      />
 
       <AddColor 
         colorName={colorName}

@@ -1,10 +1,31 @@
 .squareContainer{
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .square {
   width: 200px;
   height: 200px;
   background-color: blue;
+  position: relative;
+}
+
+.square-input-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+}
+
+.square-input{
+  background-color: blue !important;
+  width: 150px;
+  height: 25px;
 }
