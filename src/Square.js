@@ -1,18 +1,16 @@
-const Square = ({colorName, setColorName}) => {
+const Square = ({colorName}) => {
   return(
     <div className="squareContainer mt-5">
-      <div className="square m-3"> 
-        <form>
+      <div style={{backgroundColor: colorName}} className="square m-3 border border-black-600"> 
           <div className="text-center square-input-container">
-            <input 
-              type="text" 
-              placeholder="Empty Value"
+            <p
+              style={{ backgroundColor: colorName }}
               className="text-center square-input"
-              value={colorName}
-              onChange={(e) => setColorName(e.target.value)}
-            />
+            >
+              {colorName ? colorName : "Empty Value"}
+            </p>
           </div>
-        </form>
+    
       </div>
     </div>
   )

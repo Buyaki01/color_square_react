@@ -21,7 +21,6 @@ function App() {
 
       <Square 
         colorName={colorName}
-        setColorName={setColorName}
       />
 
       <AddColor 

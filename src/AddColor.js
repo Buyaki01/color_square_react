@@ -6,6 +6,7 @@ const AddColor = ({ colorName, setColorName, handleSubmit }) => {
           type="text" 
           placeholder="Add color name"
           className="border border-slate-400 rounded p-2 mt-3"
+          required
           value={colorName}
           onChange={(e) => setColorName(e.target.value)}
         />

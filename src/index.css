@@ -7,7 +7,6 @@
 .square {
   width: 200px;
   height: 200px;
-  background-color: blue;
   position: relative;
 }
 
@@ -25,7 +24,6 @@
 }
 
 .square-input{
-  background-color: blue !important;
   width: 150px;
   height: 25px;
 }
