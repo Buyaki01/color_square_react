@@ -4,14 +4,7 @@ import Square from "./Square";
 
 function App() {
   const [colorName, setColorName] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('submitted');
-    if (!colorName) return;
-    
-    setColorName(''); 
-  }
+  const [hexValue, setHexValue] = useState(''); 
 
   return (
     <div className="App">
@@ -21,12 +14,13 @@ function App() {
 
       <Square 
         colorName={colorName}
+        hexValue={hexValue}
       />
 
       <AddColor 
         colorName={colorName}
         setColorName={setColorName}
-        handleSubmit={handleSubmit}
+        setHexValue={setHexValue}
       />
     </div>
   );
